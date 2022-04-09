@@ -31,4 +31,10 @@ for t in title:
 
 print(message)
 
+import songline
+linetoken = 'tozDy6Vk5rfxThnvQ4ZmEqPePxfJPnBhiRCoL4HzeIi'
+message = songline.Sendline(linetoken)
+# message.sendtext('ສະບາຍດີ')
+
+
 
