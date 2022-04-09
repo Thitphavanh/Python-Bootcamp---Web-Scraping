@@ -41,7 +41,7 @@ def HistoralStock(CODE, days=180):
     return result
 
 
-result = HistoralStock('FORTH', 10)
+result = HistoralStock('FORTH', 20)
 print(result)
 
 price = []
@@ -61,5 +61,5 @@ day.reverse()
 plotly.offline.plot(
     {
         "data": [go.Scatter(x=day, y=price)],
-        "layout": go.Layout(title="Stock : KBANK")
+        "layout": go.Layout(title="Stock : FORTH")
     }, auto_open=True)
