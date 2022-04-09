@@ -30,3 +30,5 @@ for t in title:
     message += t.a['href'] + '\n\n'
 
 print(message)
+
+
