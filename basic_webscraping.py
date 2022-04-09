@@ -27,4 +27,5 @@ print(Kbank[1] * 15200)
 StockPrice('KBANK')
 StockPrice('SCB')
 StockPrice('TTB')
+# StockPrice('TTB')
 
