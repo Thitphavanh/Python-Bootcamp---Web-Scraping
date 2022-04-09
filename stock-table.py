@@ -1,6 +1,7 @@
 # stock-table.py
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
 
 
 def HistoralStock(CODE, days=180):
@@ -39,7 +40,23 @@ def HistoralStock(CODE, days=180):
     return result
 
 
-result = HistoralStock('KBANK', 5)
+result = HistoralStock('FORTH', 10)
 print(result)
 
-print(len(result))
+price = []
+day = []
+
+for rs in result:
+    price.append(rs[5])
+    day.append(rs[0])
+
+print(price)
+
+x = range(len(price))
+
+price.reverse()
+day.reverse()
+
+plt.plot(x, price)
+plt.xticks(x, day)
+plt.show()
