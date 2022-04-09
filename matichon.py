@@ -15,11 +15,18 @@ webopen.close()
 # end = pagehtml.find('</title>')
 # print(pagehtml[start:end])
 
-data = BeautifulSoup(pagehtml,'html.parser')
+data = BeautifulSoup(pagehtml, 'html.parser')
 # print([data.get_text().replace('\n',' ')])
 
-title = data.find_all('h3',{'class':'entry-title td-module-title'})
+title = data.find_all('h3', {'class': 'entry-title td-module-title'})
+
+message = ''
 
 for t in title:
-	print(t.text)
-	print('------')
+    # print(t.a['title'])
+    # print(t.a['href'])
+    # print('------')
+    message += t.a['title'] + '\n'
+    message += t.a['href'] + '\n\n'
+
+print(message)
