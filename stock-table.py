@@ -38,7 +38,8 @@ def HistoralStock(CODE, days=180):
 
     return result
 
-result = HistoralStock('KBANK',5)
+
+result = HistoralStock('KBANK', 5)
 print(result)
 
 print(len(result))
