@@ -32,3 +32,4 @@ def BangkokPost(cat='business'):
     return result
 
 BangkokPost('tech')
+
