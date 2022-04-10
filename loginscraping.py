@@ -21,3 +21,8 @@ driver.get(url)
 # ຄົ້ນຫາ element ໃນການລ໋ອກອິນ
 username = driver.find_element(By.ID, 'username')
 username.send_keys('thitphavanh23@gmail.com')
+
+password = driver.find_element(By.ID, 'password')
+password.send_keys('hery18205208038')
+
+password.send_keys(Keys.RETURN)
